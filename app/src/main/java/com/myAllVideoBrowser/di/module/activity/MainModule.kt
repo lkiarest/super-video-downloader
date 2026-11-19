@@ -18,6 +18,7 @@ import com.myAllVideoBrowser.ui.main.proxies.ProxiesFragment
 import com.myAllVideoBrowser.ui.main.settings.SettingsFragment
 import com.myAllVideoBrowser.ui.main.settings.adblock.AdBlockSettingsFragment
 import com.myAllVideoBrowser.ui.main.video.VideoFragment
+import com.myAllVideoBrowser.ui.main.audio.AudioFragment
 import com.myAllVideoBrowser.util.fragment.FragmentFactory
 import com.myAllVideoBrowser.util.fragment.FragmentFactoryImpl
 import dagger.Binds
@@ -51,6 +52,10 @@ abstract class MainModule {
     @FragmentScoped
     @ContributesAndroidInjector
     abstract fun bindVideoFragment(): VideoFragment
+
+    @FragmentScoped
+    @ContributesAndroidInjector
+    abstract fun bindAudioFragment(): AudioFragment
 
     @FragmentScoped
     @ContributesAndroidInjector

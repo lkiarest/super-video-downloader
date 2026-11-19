@@ -19,4 +19,8 @@
         android:icon="@drawable/video_library_24px"
         android:title="@string/video_tab"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tab_audio"
+        android:icon="@drawable/audio_file_24px"
+        android:title="@string/audio_tab" />
 </menu>

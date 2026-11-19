@@ -9,6 +9,8 @@ class StubbedFragmentFactory : FragmentFactory {
 
     override fun createVideoFragment() = Fragment()
 
+    override fun createAudioFragment() = Fragment()
+
     override fun createSettingsFragment() = Fragment()
 
     override fun createHistoryFragment() = Fragment()

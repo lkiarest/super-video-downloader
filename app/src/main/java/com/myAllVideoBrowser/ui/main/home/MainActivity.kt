@@ -138,6 +138,7 @@ class MainActivity : BaseActivity() {
 
                 R.id.tab_progress -> mainViewModel.currentItem.set(1)
                 R.id.tab_video -> mainViewModel.currentItem.set(2)
+                R.id.tab_audio -> mainViewModel.currentItem.set(3)
                 else -> mainViewModel.currentItem.set(3)
             }
 
@@ -176,6 +177,10 @@ class MainActivity : BaseActivity() {
 
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
+        if (intent.getBooleanExtra("open_audio", false)) {
+            dataBinding.viewPager.currentItem = 3
+            return
+        }
         if (intent.getBooleanExtra(
                 YoutubeDlDownloaderWorker.IS_FINISHED_DOWNLOAD_ACTION_KEY,
                 false

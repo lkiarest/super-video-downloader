@@ -164,6 +164,7 @@ android {
     // Build Types
     buildTypes {
         debug {
+            applicationIdSuffix = ".debug"
             isMinifyEnabled = false
             isShrinkResources = false
             enableUnitTestCoverage = false

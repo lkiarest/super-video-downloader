@@ -7,6 +7,9 @@ build/
 release/
 captures/*
 .externalNativeBuild
+/artifacts/
+/app/src/main/jniLibs/
+/rust_adblock/target/
 /app/libs/libv2ray*
 
 !rust_adblock/vendor/

@@ -39,4 +39,8 @@
         android:title="@string/video_move_downloads"
         app:showAsAction="ifRoom|collapseActionView" />
 
+    <item
+        android:id="@+id/item_extract_audio"
+        android:icon="@drawable/audio_file_24px"
+        android:title="@string/audio_extract" />
 </menu>

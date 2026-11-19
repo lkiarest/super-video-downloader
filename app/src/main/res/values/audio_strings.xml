@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="audio_tab">Audio</string>
+    <string name="audio_extract">Extract audio</string>
+    <string name="audio_description">Save the sound from a video as MP3 or M4A. Your original video stays unchanged.</string>
+    <string name="audio_select_video">Choose a video</string>
+    <string name="audio_no_selection">Choose a file, or use Extract audio from the video library.</string>
+    <string name="audio_output_format">Audio format</string>
+    <string name="audio_mp3" translatable="false">MP3</string>
+    <string name="audio_m4a" translatable="false">M4A</string>
+    <string name="audio_start">Start extraction</string>
+    <string name="audio_extracting">Extracting audio…</string>
+    <string name="audio_progress">Extracting audio · %1$d%%</string>
+    <string name="audio_background_hint">Extraction continues in the background. Tap to view progress.</string>
+    <string name="audio_waiting">Preparing extraction…</string>
+    <string name="audio_success">Audio is ready. Tap it below to play, save or share.</string>
+    <string name="audio_cancelled">Extraction cancelled. Your video is unchanged.</string>
+    <string name="audio_busy">An extraction is already running. Wait for it to finish or cancel it first.</string>
+    <string name="audio_no_track">This video has no audio track. Choose another video.</string>
+    <string name="audio_read_error">Cannot read this video. Choose the file again and make sure it is available locally.</string>
+    <string name="audio_extract_error">Extraction failed. Check the file and available storage, then try again.</string>
+    <string name="audio_library">Extracted audio</string>
+    <string name="audio_empty">No audio yet\nYour extracted audio will appear here.</string>
+    <string name="audio_actions">Audio actions</string>
+    <string name="audio_play">Play %1$s</string>
+    <string name="audio_save">Save to…</string>
+    <string name="audio_saved">Audio saved</string>
+    <string name="audio_file_error">Cannot open or save this audio file. Please try again.</string>
+    <string name="audio_delete_message">Delete “%1$s”? The original video will be kept.</string>
+</resources>

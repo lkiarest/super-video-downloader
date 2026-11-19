@@ -28,6 +28,7 @@ import com.myAllVideoBrowser.ui.component.adapter.VideoAdapter
 import com.myAllVideoBrowser.ui.component.adapter.VideoListener
 import com.myAllVideoBrowser.ui.component.dialog.showRenameVideoDialog
 import com.myAllVideoBrowser.ui.main.base.BaseFragment
+import com.myAllVideoBrowser.ui.main.audio.AudioFragment
 import com.myAllVideoBrowser.ui.main.home.MainActivity
 import com.myAllVideoBrowser.ui.main.player.VideoPlayerActivity
 import com.myAllVideoBrowser.ui.main.player.VideoPlayerFragment
@@ -286,6 +287,15 @@ class VideoFragment : BaseFragment() {
 
         popupMenu.setOnMenuItemClickListener { arg0 ->
             when (arg0.itemId) {
+                R.id.item_extract_audio -> {
+                    parentFragmentManager.setFragmentResult(AudioFragment.SOURCE_REQUEST, Bundle().apply {
+                        putString("uri", video.uri.toString())
+                        putString("name", video.name)
+                    })
+                    mainActivity.mainViewModel.currentItem.set(3)
+                    true
+                }
+
                 R.id.item_rename -> {
                     showRenameVideoDialog(
                         view.context, appUtil, video.name

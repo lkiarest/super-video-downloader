@@ -1,6 +1,7 @@
 package com.myAllVideoBrowser.util.fragment
 
 import androidx.fragment.app.Fragment
+import com.myAllVideoBrowser.ui.main.audio.AudioFragment
 import com.myAllVideoBrowser.ui.main.history.HistoryFragment
 import com.myAllVideoBrowser.ui.main.home.browser.BrowserFragment
 import com.myAllVideoBrowser.ui.main.home.browser.homeTab.BrowserHomeFragment
@@ -16,6 +17,7 @@ interface FragmentFactory {
     fun createBrowserFragment(): Fragment
     fun createProgressFragment(): Fragment
     fun createVideoFragment(): Fragment
+    fun createAudioFragment(): Fragment
     fun createSettingsFragment(): Fragment
     fun createHistoryFragment(): Fragment
 
@@ -34,6 +36,8 @@ class FragmentFactoryImpl @Inject constructor() : FragmentFactory {
     override fun createProgressFragment() = ProgressFragment.newInstance()
 
     override fun createVideoFragment() = VideoFragment.newInstance()
+
+    override fun createAudioFragment() = AudioFragment()
 
     override fun createSettingsFragment() = SettingsFragment.newInstance()
 

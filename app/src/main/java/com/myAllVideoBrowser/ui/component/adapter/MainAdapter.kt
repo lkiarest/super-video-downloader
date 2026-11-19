@@ -17,11 +17,12 @@ class MainAdapter(
             0 -> fragmentFactory.createBrowserFragment()
             1 -> fragmentFactory.createProgressFragment()
             2 -> fragmentFactory.createVideoFragment()
+            3 -> fragmentFactory.createAudioFragment()
             else -> fragmentFactory.createVideoFragment()
         }
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return 4
     }
 }
